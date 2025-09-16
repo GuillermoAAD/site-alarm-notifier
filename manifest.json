@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Site Alarm Notifier",
+  "version": "1.0",
+  "description": "Show a notification in a determinated hour, and open a website.",
+  "permissions": ["alarms", "notifications", "storage"],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "options_page": "options/options.html",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Configurar recordatorio de check-in"
+  }
+}

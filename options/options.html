@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuration</title>
+    <style>
+        body { font-family: sans-serif; width: 350px; padding: 10px; }
+        h1, h2 { text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="time"] { width: 95%; padding: 8px; }
+        button { padding: 10px 15px; cursor: pointer; }
+        #alarms-list { list-style: none; padding: 0; }
+        #alarms-list li { display: flex; justify-content: space-between; align-items: center; padding: 8px; border-bottom: 1px solid #eee; }
+        .delete-btn { background-color: #f44336; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <h1>Configuration</h1>
+
+    <h2>General URL</h2>
+    <div class="form-group">
+        <label for="urlSitio">URL of the site:</label>
+        <input type="text" id="urlSitio" placeholder="https://example.com">
+        <button id="saveUrl">Save URL</button>
+    </div>
+
+    <h2>Alarms</h2>
+    <div class="form-group">
+        <label for="newAlarmTime">Time for new alarm:</label>
+        <input type="time" id="newAlarmTime">
+        <button id="addAlarm">Add alarm</button>
+    </div>
+
+    <ul id="alarms-list">
+        <!-- Alarms will be listed here -->
+    </ul>
+
+    <script src="options.js"></script>
+</body>
+</html>
